@@ -1,0 +1,51 @@
+.slider-container {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide-card {
+  /* overflow: hidden; */
+  border-radius: 18px; /* Adjust the border-radius as needed */
+  width: 100%; /* Set the width to 100% to make the slides take up the full width */
+  max-height: 500px; /*Adjust the max-height as needed */
+  margin: 0 -450px; /* Add margin between slides */
+}
+
+.card {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 300px;
+  height: 300px;
+  object-fit: cover; /* Use 'cover' to make the image cover the entire container */
+  border-radius: 18px; /* Make sure to match the border-radius of .slide-card */
+  transition: transform 0.5s ease-in-out;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 2.5em;
+  color: #333;
+}
+
+.right-arrow {
+  right: 5px;
+}
+
+.left-arrow {
+  left: 5px;
+}
